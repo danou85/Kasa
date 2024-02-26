@@ -15,7 +15,7 @@ const Card = () => {
   return (
     // Utilise la classe CSS 'Card-content' pour styliser le conteneur de cartes
     <div className="Card-content">
-     /* {/* Utilise la méthode map pour créer une carte pour chaque élément dans logementsData */}
+      {/* Utilise la méthode map pour créer une carte pour chaque élément dans logementsData */}
       {logementsData.map((logement) => (
         /* Utilise le composant 'Link' pour créer un lien vers la page de détails du logement */
         /* La clé unique est définie comme l'ID du logement */

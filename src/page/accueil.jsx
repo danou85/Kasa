@@ -3,6 +3,8 @@ import '../page/accueil.css'
 import logo from '../logo/logo-kasa.png'
 import Banner from "../composant/banner";
 import Card from "../composant/card";
+import Footer from "../composant/footer";
+
 
 
 
@@ -14,6 +16,7 @@ function Home () {
             </Header>
             <Banner />
             <Card/>
+            <Footer/>
         </div>
     )
 }
