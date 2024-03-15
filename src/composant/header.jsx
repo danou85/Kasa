@@ -6,12 +6,12 @@ import logo from '../logo/logo-kasa.png'
 function Header() {
     const title = 'Kasa'
     return (
-        <div className='lmj-banner'>
+        <header>
             <img src={logo} alt='Kasa' className='lmj-logo' />
             <h1 className='lmj-title'></h1>
             <Link to="/" className='img-button'>Accueil</Link>
             <Link to="/" className='img-button2'>A propos</Link>
-        </div>
+        </header>
         
     )
 }

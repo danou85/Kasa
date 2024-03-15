@@ -4,21 +4,27 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './page/accueil';
 import Card from './composant/card';
+import Footer from './composant/footer';
+import Header from './composant/header';
 
 
 const App = () => {
 
   return (
-
     <Router>
-
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/' element={< about/>} />
-      </Routes>
+      <Header/>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/card" element={<Card />} />
+          <Route path="/footer" element={<Footer />} />
+        </Routes>
+      </main>
+      <Footer/>
     </Router>
   );
 };
 
 // Exporte le composant App pour pouvoir l'utiliser ailleurs dans l'application
 export default App;
+
