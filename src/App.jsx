@@ -1,19 +1,24 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import Home from '../src/page/accueil'
+// Importe React depuis la bibliothèque React
+import React from 'react';
+// Importe BrowserRouter, Routes, et Route depuis 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './page/accueil';
+import Card from './composant/card';
 
-function App() {
+
+const App = () => {
+
   return (
-    <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route component={NotFound} />
-    </Switch>
-  </Router>
-     
-  )
-}
 
-export default App
+    <Router>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/' element={< about/>} />
+      </Routes>
+    </Router>
+  );
+};
+
+// Exporte le composant App pour pouvoir l'utiliser ailleurs dans l'application
+export default App;

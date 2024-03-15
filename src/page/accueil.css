@@ -1,25 +1,30 @@
 h1{
-    background-color: blue;
+    background-color:black;
 }
 
 
 .lmj-banner{
     display: flex;
     flex-direction: row;
+    
 }
 
 
 .lmj-logo{
     display: flex;
     align-items: flex-start;
+    object-fit: cover;
 }
 
 .img-button {
    margin-left: 70%;
+   color: black;
 }
 
 .img-button2{
     margin-left: 5%;
+    color: black;
+    text-decoration: none;
 }
 
 
