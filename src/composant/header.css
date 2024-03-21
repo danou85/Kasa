@@ -4,4 +4,20 @@ header{
     justify-content: center;
    
 }
+.img-button {
+    margin-left: 62%;
+    color: black;
+ }
+ 
+ .img-button2{
+     margin-left: 5%;
+     color: black;
+     text-decoration: none;
+     
+ }
 
+ 
+
+.img-logo{
+    margin-left: 25%;
+}
