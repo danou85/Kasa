@@ -1,9 +1,10 @@
 
 import React from 'react';
-import logo from '../logo/logo-kasa.png'
 import Banner from "../composant/banner";
 import Card from "../composant/card";
 import Footer from "../composant/footer";
+import Logo from '../composant/logo';
+import Navigation from '../composant/nav';
 
 
 
@@ -12,7 +13,8 @@ import Footer from "../composant/footer";
 function Home () {
     return (
         <div>
-            <header/>
+            <logo/>
+            <Navigation />
             <Banner title="chez vous , partout et ailleur" image= "banner-1"/>
             <Card/>
             <footer/>

@@ -5,14 +5,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './page/accueil';
 import Apropos from './page/apropos'
 import Card from './composant/card';
-import Header from './composant/header';
+
 import Footer from './composant/footer';
+import Logo from './composant/logo';
 
 const App = () => {
 
   return (
       <div>
-        <Header/>
+        <Logo/>
         <Routes>
         <Route path='/' element={<Home />} />
         <Route path='apropos' element={<Apropos />} />
