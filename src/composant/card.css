@@ -9,7 +9,7 @@
   
   .Card {
     position: relative;
-    width: 300px;
+    width: 28%;
     height: 300px;
     margin: 30px;
     background: linear-gradient(180deg, salmon 0%, red 300%);

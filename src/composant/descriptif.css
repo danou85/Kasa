@@ -1,0 +1,43 @@
+.collaps-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    width: 100%;
+    max-width: 1023px;
+    height: 52px;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .collapse-description {
+    width: 100%;
+    max-width: 1023px;
+    color: #FF6060;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+  }
+  /* Ajout de styles pour l'animation du chevron */
+  .collapse .chevron-icon {
+    transition: transform 0.3s ease;
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  
+  
+  
+  

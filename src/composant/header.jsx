@@ -10,8 +10,11 @@ function Header() {
         <header>
             <img src={logo} alt='Kasa' className='imj-logo' />
             <h1 className='lmj-title'></h1>
-            <Link to="/" className='img-button'>Accueil</Link>
-            <Link to="/" className='img-button2'>A propos</Link>
+            <ul className='img-button'>
+            <Link to="/Home" className='accueil'>Accueil</Link>
+            <Link to="/Apropos" className='propos'> A propos</Link>
+            </ul>
+            
         </header>
         
     )
