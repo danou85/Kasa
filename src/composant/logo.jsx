@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../logo/logo-kasa.png'
+import logo from './logo-kasa.png'
 import './logo.css'
 
 const Logo = () => {
@@ -9,7 +9,7 @@ const Logo = () => {
 
     return(
         <div className="logo" onClick={redirectToHome}>
-        <img src= '/logo/logo-kasa.png'/>
+        <img src= '/logo-kasa.png'/>
         </div>
     )
 }

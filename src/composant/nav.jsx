@@ -21,7 +21,7 @@ const Navigation = () => {
                 </NavLink>
 
                 {/* Utilise le composant NavLink pour créer un lien vers la page "À propos" avec la classe CSS 'nav-link' */}
-                <NavLink to='/about' className='nav-link'>
+                <NavLink to='/Apropos' className='nav-link'>
                     {/* Affiche le lien "À propos" comme un élément de liste (li) */}
                     <li>A propos</li>
                 </NavLink>
