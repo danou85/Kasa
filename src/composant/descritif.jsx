@@ -9,9 +9,6 @@ import Collapse from "./collapse";
 const Forms = () => {
   // Utilisation de useState pour gérer l'état de chaque collapsible
   const [isCollapsible1Open, setCollapsible1Open] = useState(false);
-  const [isCollapsible2Open, setCollapsible2Open] = useState(false);
-  const [isCollapsible3Open, setCollapsible3Open] = useState(false);
-  const [isCollapsible4Open, setCollapsible4Open] = useState(false);
   // Utilise le hook useEffect pour effectuer des actions après le rendu du composant.
   // Cela peut inclure des appels à des API, la gestion d'effets secondaires, ou la mise à jour de l'état en réponse à des changements.
 
