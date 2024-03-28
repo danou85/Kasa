@@ -8,7 +8,6 @@ const Apropos = () => {
     return(
         <div>
             <Banner image="banner-2"/>
-            <Collapse/>
             <Forms/>
         </div>
     )

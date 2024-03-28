@@ -30,7 +30,7 @@ const Collapse = ({ title, content }) => {
       {isCollapsed && (
         <div className="collaps-description">
           {/* Contenu de la collapsible */}
-          {children}
+          {content}
         </div>
       )}
     </div>

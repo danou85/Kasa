@@ -7,18 +7,20 @@ import Apropos from './page/apropos'
 import Card from './composant/card';
 
 import Footer from './composant/footer';
-import Logo from './composant/logo';
+import Header from './composant/Header';
 
 const App = () => {
 
   return (
       <div>
-        <Logo/>
-        <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='apropos' element={<Apropos />} />
-      </Routes>
-      <Footer/>
+        <Header/>
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='apropos' element={<Apropos />} />
+          </Routes>
+        </main>
+        <Footer/>
       </div>
   );
 };
