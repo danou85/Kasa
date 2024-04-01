@@ -1,0 +1,23 @@
+import React from "react";
+import { useParams } from "react-router-dom";
+import logementsData from "../data/logements.json";
+
+const LogementDetails = () => {
+  const { id } = useParams();
+  const logement = logementsData.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return <div>Logement introuvable</div>;
+  }
+
+  return (
+    <div>
+      <h2>{logement.title}</h2>
+      <p>Description: {logement.description}</p>
+      <p>Prix: {logement.price}</p>
+      {/* Ajoutez ici d'autres détails du logement que vous souhaitez afficher */}
+    </div>
+  );
+};
+
+export default LogementDetails;

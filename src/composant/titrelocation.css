@@ -1,0 +1,162 @@
+
+.title-loc {
+    display: flex;
+    justify-content: space-between; /* Ajout de l'espacement autour des éléments */
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 170px;
+}
+.title-loc h1 {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 500px;
+}
+.title-loc p {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.title-loc ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding: 0%;
+  }
+.title-loc li {
+    padding-left:10px ;
+    padding-right: 10px;
+    Height:25px;
+    margin-right: 50px;
+    background-color: #FF6060;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#title-loc-1 {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 69.44%;
+    max-width: 580px;
+    height: 50px;
+    color: white;
+    background-color: #ff6060;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  #title-loc-2 {
+    padding-left: 10px;
+    flex-wrap: wrap;
+    width: 69.44%;
+    max-width: 580px;
+    height: 50px;
+    color: white;
+    background-color: #ff6060;
+    border-radius: 10px;
+  }
+.host-info {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.host-info p{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+.host-info img{
+    border-radius: 70px;
+    margin-left: 20px;
+}
+.rating-info p {
+    display: flex;
+    align-items: center;
+    font-size: 36px; /* Ajustez la taille de police à votre convenance */
+    justify-content: flex-end;
+}
+
+
+.inactive {
+    color: #E3E3E3;
+
+}
+/* Titleloc.css */
+    /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 999px) {
+    .host-rating-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse; /* Inverse le sens de la ligne */
+      }
+      .host-info img {
+        border-radius: 70px;
+        margin-left: 5px;
+        width: 50px;
+        height: 50px;
+      }
+      .host-info {
+        width: 150px;
+      }
+      .host-info p {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+      }
+      .rating-info {
+        display: flex;
+        align-items: center;
+      }
+      
+      .rating-info p {
+        font-size: 20px; /* Ajustez la taille de police à votre convenance */
+      }
+      
+    .title-loc {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .title-loc li {
+        margin-right: 10px;
+        width: 84px;
+        height: 18px;
+    }
+    .forms-title {
+        margin-left: 10%;
+    }
+    #title-loc-1 {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+      #title-loc-2 {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+    }

@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './page/accueil';
 import Apropos from './page/apropos'
 import Card from './composant/card';
-
 import Footer from './composant/footer';
 import Header from './composant/Header';
+import Location from './page/location';
 
 const App = () => {
 
@@ -18,6 +18,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='apropos' element={<Apropos />} />
+            <Route path='location/:id' element={<Location />} />
           </Routes>
         </main>
         <Footer/>
