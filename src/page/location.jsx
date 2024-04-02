@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import logementsData from '../data/logements.json';
 
+import Carousel from '../composant/carousel.jsx';
+
 
 import Titrelocation from '../composant/titrelocation.jsx';
 
@@ -32,7 +34,7 @@ const Location = () => {
   // Rendu du composant Location
   return (
     <div>
-     
+      <Carousel images={logement.pictures}/>
       <Titrelocation
         title={logement.title}
         location={logement.location}
