@@ -8,6 +8,7 @@ import Card from './composant/card';
 import Footer from './composant/footer';
 import Header from './composant/Header';
 import Location from './page/location';
+import Erreur from './composant/erreur';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='apropos' element={<Apropos />} />
             <Route path='location/:id' element={<Location />} />
+            <Route path='*' element={<Erreur />} />
           </Routes>
         </main>
         <Footer/>
