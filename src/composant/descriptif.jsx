@@ -6,7 +6,7 @@ import "./descriptif.css";
 import Collapse from "./collapse";
 
 // Définit le composant fonctionnel Forms
-const Forms = () => {
+const Description = () => {
   // Utilisation de useState pour gérer l'état de chaque collapsible
   const [isCollapsible1Open, setCollapsible1Open] = useState(false);
   // Utilise le hook useEffect pour effectuer des actions après le rendu du composant.
@@ -44,5 +44,5 @@ const Forms = () => {
   );
 };
 
-// Exporte le composant Forms pour pouvoir l'utiliser ailleurs dans l'application
-export default Forms;
+// Exporte le composant Description pour pouvoir l'utiliser ailleurs dans l'application
+export default Description;

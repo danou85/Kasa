@@ -2,14 +2,15 @@ import React from "react";
 
 // Importe le composant 'Link' de 'react-router-dom' pour créer des liens dans l'application
 import { Link } from "react-router-dom";
+import './erreur.css';
 
 const Erreur = () => {
   return (
-    <div>
-      <h1>Erreur =</h1>
-      <h3>Oups! la page que vous demandez n'existe pas .</h3>
+    <div  className="titre">
+      <h1>404</h1>
+      <h4>Oups! la page que vous demandez n'existe pas .</h4>
 
-      <p className="return">
+      <p className="retour">
         {/* Le lien redirige vers la page d'accueil */}
         <Link to="/" className="home-link">
           Retourner sur la page d’accueil

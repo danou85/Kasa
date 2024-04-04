@@ -2,6 +2,7 @@
 import React from 'react';
 // Importe BrowserRouter, Routes, et Route depuis 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
 import Home from './page/accueil';
 import Apropos from './page/apropos'
 import Card from './composant/card';

@@ -1,6 +1,7 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 header nav {
@@ -8,13 +9,14 @@ header nav {
 }
 
 header nav a {
+  width: 136px;
   margin-right: 20px;
   text-decoration: none;
   color: black;
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 5px;
-  height: 20px;
+  height: 34px;
 }
 
 header nav a:hover {

@@ -40,7 +40,7 @@
     padding-left:10px ;
     padding-right: 10px;
     Height:25px;
-    margin-right: 50px;
+    margin-right: 35px;
     background-color: #FF6060;
     align-items: center;
     display: flex;
@@ -93,6 +93,13 @@
     justify-content: flex-end;
 }
 
+.title-info h1{
+   margin: 5px;
+}
+.title-info p{
+  margin-top: 0;
+  color: black;
+}
 
 .inactive {
     color: #E3E3E3;
