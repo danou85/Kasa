@@ -1,6 +1,6 @@
 /* Votre fichier CSS */
 .banner {
-  width: 1200px; /* La largeur est maintenant en pourcentage par rapport à une largeur parente de 1440 pixels */
+  width: 1200px; 
   max-width: 1240px; /* La largeur maximale est de 1240 pixels */
   height: 223px;
   margin: 50px;
@@ -18,8 +18,11 @@
   color: white;
   font-size: 24px;
 }
+
+
   .banner-1 {
     background-image: url("./background-banner.png");
+
   }
 
   .banner-2 {
