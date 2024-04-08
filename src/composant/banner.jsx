@@ -4,9 +4,12 @@ import './banner.css';
 const Banner = (props) => {
     return(
         <div className={`banner ${props.image}`}>
-            {props.title}
+          <p>{props.title}</p>  
         </div>
     )
 }
+
+
+
 
 export default Banner;

@@ -6,12 +6,16 @@
     align-items: center;
     margin-top: 50px;
     background-color: #eee;
+    border-radius: 30px;
+    width: 1240px;
+    height: auto;
+    margin-left: 50px;
   }
   
   .Card {
     position: relative;
-    width: 28%;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     margin: 30px;
     background: linear-gradient(180deg, salmon 0%, red 300%);
     border-radius: 10px;
@@ -34,3 +38,17 @@
     right: 0;
     margin: 10px;
   }
+
+
+    /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
+@media only screen and (max-width: 768px) {
+
+  .Card-content {
+   width: 100%;
+   margin-left: 30px;
+  }
+  .Card{
+    width: 100%;
+  }
+
+}
