@@ -1,4 +1,4 @@
-.collaps-content {
+.collapse-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     padding-left: 20px;
     font-size: 24px;
   }
-  .collaps-description {
+  .collapse-description {
     width: 100%;
     max-width: 1023px;
     color: #FF6060;

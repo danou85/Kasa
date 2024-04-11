@@ -42,7 +42,7 @@ const Location = () => {
         host={logement.host}
         rating={logement.rating}
       />
-      <DescriptionEquipement
+      <DescriptionEquipement 
         description={logement.description}
         equipments={logement.equipments}
       />

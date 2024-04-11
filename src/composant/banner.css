@@ -16,7 +16,8 @@
   align-items: center; /* Centrer verticalement */
   justify-content: center; /* Centrer horizontalement */
   color: white;
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 
