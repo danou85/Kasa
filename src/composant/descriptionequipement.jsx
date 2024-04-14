@@ -17,8 +17,8 @@ const DescriptionEquipement = ({ description, equipments }) => {
   };
 
   return (
-    <div className='DescriptionEquipement '>
-      <Collapse
+    <div className='equipement '>
+      <Collapse className='description'
         title="Description"
         content={description}
         isCollapsed={descriptionCollapsed}

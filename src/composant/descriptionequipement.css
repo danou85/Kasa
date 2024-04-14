@@ -1,24 +1,25 @@
-.DescriptionEquipement {
+.equipement {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     margin: 50px;
     font-family: 'Montserrat', sans-serif;
   }
-.toggle-button {
-    background: #FF6060;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    outline: none;
-    width:  582px;
-    height:  52px;
-    border-radius: 10px;
-    display: flex;
+ .collapse .description{
+  display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    background-color: #FF6060;
+    width: 100%;
+    max-width: 1023px;
+    height: 52px;
+    color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 24px;
 }
+
 .svg-inline--fa.fa-chevron-up.chevron-icon {
   font-size: 20px;
 }
@@ -41,7 +42,7 @@
     transition: transform 0.3s ease;
   }
   
-.toggle-button .chevron-icon {
+ .chevron-icon {
     transition: transform 0.15s ease; /* Ajout de la transition */
   }
   
