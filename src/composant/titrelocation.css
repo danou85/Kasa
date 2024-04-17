@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between; /* Ajout de l'espacement autour des éléments */
     margin-top: 20px;
-    margin-left: 120px;
-    margin-right: 170px;
+    
 }
 .title-loc h1 {
     color: #FF6060;
@@ -13,7 +12,7 @@
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
-    width: 500px;
+    
 }
 .title-loc p {
     color: #FF6060;
@@ -72,7 +71,7 @@
 .host-info {
     display: flex;
     align-items: center;
-    width: 200px;
+    
 }
 .host-info p{
     font-family: Montserrat;
@@ -92,8 +91,8 @@
     justify-content: flex-end;
 }
 
-.title-info h1{
-   margin: 5px;
+.title-info {
+  width: 45%;
 }
 .title-info p{
   margin-top: 0;
