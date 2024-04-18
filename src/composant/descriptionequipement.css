@@ -2,22 +2,25 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
-    width: 100%;
+    width: 95%;
     font-family: 'Montserrat', sans-serif;
+    
   }
  .collapse .description{
   display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FF6060;
-    width: 50%;
     max-width: 1023px;
     height: 52px;
     color: white;
     border-radius: 10px;
-  
+   width: 90%;
     font-size: 24px;
+}
+
+.collapse .equipement{
+  width: 90%;
 }
 
 .svg-inline--fa.fa-chevron-up.chevron-icon {
