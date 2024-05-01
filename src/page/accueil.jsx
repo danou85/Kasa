@@ -10,7 +10,7 @@ import Navigation from '../composant/Header';
 
 function Home () {
     return (
-        <div>
+        <div className='home'>
             <Banner title="chez vous , partout et ailleur" image= "banner-1"/>
             <Card/>
         </div>

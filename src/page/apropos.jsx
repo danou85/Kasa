@@ -6,7 +6,7 @@ import Description from '../composant/descriptif'
 
 const Apropos = () => {
     return(
-        <div>
+        <div className='apropos'>
             <Banner image="banner-2"/>
             <Description/>
         </div>

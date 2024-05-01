@@ -33,7 +33,7 @@ const Location = () => {
 
   // Rendu du composant Location
   return (
-    <div>
+    <div className='location'>
       <Carousel images={logement.pictures}/>
       <Titrelocation
         title={logement.title}

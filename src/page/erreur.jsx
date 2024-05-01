@@ -4,7 +4,7 @@ import Erreur from '../composant/erreur'
 
 
 const Erreur404 = () => {
-    <div>
+    <div> 
         <Erreur/>
     </div>
 }
