@@ -1,9 +1,8 @@
 /* Votre fichier CSS */
 .banner {
-  width: 1200px; 
-  max-width: 1240px; /* La largeur maximale est de 1240 pixels */
+  width: 100%; 
   height: 223px;
-  margin: 50px;
+
   background-size: cover;
   background-position: center;
   border-radius: 30px;
