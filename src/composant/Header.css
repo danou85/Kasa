@@ -20,3 +20,14 @@ header nav a {
 header nav a:hover {
   border-bottom: 2px solid black;
 }
+
+@media only screen and (max-width:768px ) {
+  header nav a {
+   margin-left: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  nav{
+    align-items: center;
+  }
+}

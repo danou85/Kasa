@@ -32,7 +32,6 @@ const Titrelocation = ({ title, location, tags, host, rating }) => {
         <h1>{title}</h1>
         {/* Affiche l'emplacement du logement */}
         <p>{location}</p>
-        <br />
         {/* Affiche les balises du logement sous forme de liste */}
         <ul>
           {tags.map((tag) => (
