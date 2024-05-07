@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Importe le fichier de style CSS pour le composant Titrelocation
-import './titrelocation.css';
+import './titrelocation.css'; // Import du fichier CSS pour les styles du composant
 
 // Définit le composant fonctionnel Titrelocation
 const Titrelocation = ({ title, location, tags, host, rating }) => {
@@ -14,43 +14,36 @@ const Titrelocation = ({ title, location, tags, host, rating }) => {
     const stars = [];
     for (let i = 0; i < 5; i++) {
       if (i < rating) {
-        stars.push(<span key={i}>&#9733;</span>);
+        stars.push(<span key={i}>&#9733;</span>); // Ajout d'une étoile pleine si i est inférieur à la note
       } else {
-        stars.push(<span className='inactive' key={i}>&#9733;</span>);
+        stars.push(<span className='inactive' key={i}>&#9733;</span>); // Ajout d'une étoile inactive si i est supérieur ou égal à la note
       }
     }
-    return stars;
+    return stars; // Retourne le tableau d'étoiles généré
   };
 
   // Rendu du composant Titrelocation
   return (
-    // Utilise la classe CSS 'title-loc' pour styliser le conteneur
-    <div className="title-loc">
-      {/* Conteneur pour les informations de titre, emplacement et balises */}
-      <div className="title-info">
-        {/* Affiche le titre du logement */}
-        <h1>{title}</h1>
-        {/* Affiche l'emplacement du logement */}
-        <p>{location}</p>
-        {/* Affiche les balises du logement sous forme de liste */}
+    <div className="title-loc"> {/* Conteneur principal pour le titre et l'emplacement */}
+      <div className="title-info"> {/* Conteneur pour les informations de titre, emplacement et balises */}
+        <h1>{title}</h1> {/* Affichage du titre du logement */}
+        <p>{location}</p> {/* Affichage de l'emplacement du logement */}
         <ul>
+          {/* Affichage des balises du logement sous forme de liste */}
           {tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </ul>
       </div>
 
-      {/* Conteneur pour les informations de l'hôte et de la note */}
-      <div className="host-rating-info">
-        {/* Ajout de l'affichage du nom et de l'image de l'hôte */}
-        <div className="host-info">
-          <p>{hostName}</p>
-          <img src={hostPicture} alt={`${hostName}'s profile`} />
+      <div className="host-rating-info"> {/* Conteneur pour les informations de l'hôte et de la note */}
+        <div className="host-info"> {/* Conteneur pour les informations de l'hôte */}
+          <p>{hostName}</p> {/* Affichage du nom de l'hôte */}
+          <img src={hostPicture} alt={`${hostName}'s profile`} /> {/* Affichage de l'image de l'hôte */}
         </div>
 
-        {/* Ajout de l'affichage du rating sous forme d'étoiles */}
-        <div className="rating-info">
-          <p>{generateStars()}</p>
+        <div className="rating-info"> {/* Conteneur pour l'affichage de la note */}
+          <p>{generateStars()}</p> {/* Affichage des étoiles générées par la fonction generateStars */}
         </div>
       </div>
     </div>

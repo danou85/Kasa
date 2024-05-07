@@ -1,19 +1,14 @@
-import React from "react";
-import logo from "../logo/logo-footer.png"
-import './footer.css'
-
-
+import React from "react"; // Import de React pour créer des composants
+import logo from "../logo/logo-footer.png"; // Import de l'image du logo
+import './footer.css'; // Import du fichier CSS pour les styles du footer
 
 const Footer = () => {
-    // Rendu du composant
+    // Rendu du composant Footer
     return (
-      // Utilise la classe CSS 'Footer-content' pour styliser le contenu du pied de page
-      <footer>
-        {/* Affiche l'image du logo du pied de page avec la classe 'footer-logo' */}
-        <img src={logo} alt="logo kasa" className="footer-logo" />
-        {/* Affiche le texte du pied de page */}
-        <p>© 2020 Kasa. All rights reserved</p>
+      <footer> {/* Élément footer pour le pied de page */}
+        <img src={logo} alt="logo kasa" className="footer-logo" /> {/* Affichage du logo avec la classe 'footer-logo' */}
+        <p>© 2020 Kasa. All rights reserved</p> {/* Texte du pied de page */}
       </footer>
     );
   };
-export default Footer;
+export default Footer; // Export du composant Footer

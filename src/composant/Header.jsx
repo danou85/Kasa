@@ -3,34 +3,29 @@ import React from 'react';
 // Importe le composant NavLink de 'react-router-dom' pour créer des liens de navigation
 import { NavLink } from 'react-router-dom';
 // Importe le fichier de style CSS pour le composant Navigation
-import './Header.css';
-import logo from './../assets/logo-kasa.png';
+import './Header.css'; // Import du fichier CSS pour les styles du header
+import logo from './../assets/logo-kasa.png'; // Import de l'image du logo depuis le dossier assets
 
-// Définit le composant fonctionnel Navigation
+// Définit le composant fonctionnel Header
 const Header = () => {
-    // Rendu du composant Navigation
+    // Rendu du composant Header
     return (
-        <header>
-            <img src={logo} alt="logo" className="logo"/>
-            <nav>
+        <header> {/* Élément header pour l'en-tête */}
+            <img src={logo} alt="logo" className="logo"/> {/* Affichage du logo avec la classe 'logo' */}
+            <nav> {/* Élément nav pour la navigation */}
                 {/* Utilise le composant NavLink pour créer un lien vers la page d'accueil avec la classe CSS 'nav-link' */}
                 <NavLink to='/' className='nav-link'>
-                    {/* Affiche le lien "Accueil" comme un élément de liste (li) */}
-                    Accueil
+                    Accueil {/* Texte du lien vers la page d'accueil */}
                 </NavLink>
 
                 {/* Utilise le composant NavLink pour créer un lien vers la page "À propos" avec la classe CSS 'nav-link' */}
                 <NavLink to='/Apropos' className='nav-link'>
-                    {/* Affiche le lien "À propos" comme un élément de liste (li) */}
-                    A propos
+                    À propos {/* Texte du lien vers la page "À propos" */}
                 </NavLink>
             </nav>
         </header>
     );
 };
 
-// Exporte le composant Navigation pour pouvoir l'utiliser ailleurs dans l'application
+// Exporte le composant Header pour pouvoir l'utiliser ailleurs dans l'application
 export default Header;
-
-
-
