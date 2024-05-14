@@ -75,5 +75,8 @@
       .equipement .collapse-content{
         width: 100%;
       }
+      .collapse .description{
+        margin-left: 25px;
+      }
     }
   
