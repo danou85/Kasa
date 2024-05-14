@@ -11,7 +11,7 @@ const Header = () => {
     // Rendu du composant Header
     return (
         <header> {/* Élément header pour l'en-tête */}
-            <img src={logo} alt="logo" className="logo"/> {/* Affichage du logo avec la classe 'logo' */}
+           <h1><img src={logo} alt="logo" className="logo"/> </h1> {/* Affichage du logo avec la classe 'logo' */}
             <nav> {/* Élément nav pour la navigation */}
                 {/* Utilise le composant NavLink pour créer un lien vers la page d'accueil avec la classe CSS 'nav-link' */}
                 <NavLink to='/' className='nav-link'>
