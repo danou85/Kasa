@@ -6,7 +6,7 @@ const Erreur = () => {
   return (
     <div className="titre"> {/* Conteneur principal de la page d'erreur */}
       <h1>404</h1> {/* Titre de l'erreur */}
-      <h4>Oups! la page que vous demandez n'existe pas .</h4> {/* Message d'erreur */}
+      <h3>Oups! la page que vous demandez n'existe pas .</h3> {/* Message d'erreur */}
 
       <p className="retour">
         {/* Lien de retour vers la page d'accueil */}

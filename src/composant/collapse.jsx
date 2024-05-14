@@ -20,16 +20,16 @@ const Collapse = ({ title, content }) => {
   // Rendu du composant Collapse
   return (
     <div className="collapse-content">
-      // Bouton pour activer/désactiver le collapsible 
+       {/* Bouton pour activer/désactiver le collapsible  */}
       <button
         className="collapse"
         onClick={() => setCollapsible1Open(!isCollapsible1Open)}
       >
         {title}
-        //Appel à la fonction pour rendre l'icône chevron
+        {/* Appel à la fonction pour rendre l'icône chevron */}
         {renderChevron(isCollapsible1Open)}
       </button>
-      // Affichage du contenu si le collapsible est ouvert 
+      {/* Affichage du contenu si le collapsible est ouvert  */}
       {isCollapsible1Open && (
         <div className="collapse-description">
           // Contenu de la collapsible //
