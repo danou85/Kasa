@@ -59,4 +59,7 @@
   .apropos .collapse-description{
     width: 90%;
   }
+  .collapse-description{
+    margin: left 25px; 
+  }
 }

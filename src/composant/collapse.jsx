@@ -32,7 +32,7 @@ const Collapse = ({ title, content }) => {
       {/* Affichage du contenu si le collapsible est ouvert  */}
       {isCollapsible1Open && (
         <div className="collapse-description">
-          // Contenu de la collapsible //
+          {/* // Contenu de la collapsible // */}
           {content}
         </div>
       )}
