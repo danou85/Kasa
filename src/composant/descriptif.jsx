@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import "./descriptif.css";
 import Collapse from "./collapse";
 
-// Définit le composant fonctionnel Forms
+// Définit le composant fonctionnel Descrptif 
 const Description = () => {
   // Utilisation de useState pour gérer l'état de chaque collapsible
   const [isCollapsible1Open, setCollapsible1Open] = useState(false);

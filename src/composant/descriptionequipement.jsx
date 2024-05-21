@@ -5,8 +5,12 @@ import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'; 
 import Collapse from './collapse'; // Import du composant Collapse depuis son emplacement correct
 
 const DescriptionEquipement = ({ description, equipments }) => {
-  const [descriptionCollapsed, setDescriptionCollapsed] = useState(true); // État local pour suivre l'état de la description (collapsed or expanded)
-  const [equipementCollapsed, setEquipementCollapsed] = useState(true); // État local pour suivre l'état des équipements (collapsed or expanded)
+  // État local pour suivre si la description est réduite (true) ou étendue (false)
+  const [descriptionCollapsed, setDescriptionCollapsed] = useState(true);
+  
+  // État local pour suivre si les équipements sont réduits (true) ou étendus (false)
+  const [equipementCollapsed, setEquipementCollapsed] = useState(true);
+
 
   const toggleDescriptionCollapse = () => { // Fonction pour basculer l'état de la description
     setDescriptionCollapsed(!descriptionCollapsed);

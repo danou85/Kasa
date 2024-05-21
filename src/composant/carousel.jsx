@@ -1,54 +1,65 @@
-import React, { useState } from 'react'; // Import de React et useState pour gérer l'état local
-import './carousel.css'; // Import du fichier CSS pour les styles du carousel
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import des icônes FontAwesome
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'; // Import des icônes de flèches gauche et droite
+// Importe React et useState depuis la bibliothèque React
+import React, { useState } from 'react';
 
+// Importe le fichier de style CSS pour le composant Carousel
+import './carousel.css';
+
+// Importe FontAwesomeIcon et les icônes associées pour les flèches gauche et droite
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+// Définit le composant fonctionnel Carousel
 const Carousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0); // Déclaration d'un état local pour suivre l'index de l'image actuellement affichée
+  // Utilise le hook useState pour gérer l'état du currentIndex
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => { // Fonction pour passer à la diapositive suivante
-    const newIndex = (currentIndex + 1) % images.length; // Calcul du nouvel index en tenant compte du nombre d'images
-    setCurrentIndex(newIndex); // Mise à jour de l'index actuel
+  // Fonction pour passer à la diapositive suivante
+  const nextSlide = () => {
+    // Calcule le nouvel index en utilisant le modulo pour boucler à la première image après la dernière
+    const newIndex = (currentIndex + 1) % images.length;
+    // Met à jour l'état du currentIndex
+    setCurrentIndex(newIndex);
   };
 
-  const prevSlide = () => { // Fonction pour passer à la diapositive précédente
-    const newIndex = (currentIndex - 1 + images.length) % images.length; // Calcul du nouvel index en tenant compte du nombre d'images
-    setCurrentIndex(newIndex); // Mise à jour de l'index actuel
+  // Fonction pour passer à la diapositive précédente
+  const prevSlide = () => {
+    // Calcule le nouvel index en utilisant le modulo avec ajustement pour boucler à la dernière image après la première
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    // Met à jour l'état du currentIndex
+    setCurrentIndex(newIndex);
   };
 
-  // Condition pour vérifier s'il y a plus d'une image
-  const shouldShowNavigation = images.length > 1;
-
+  // Rendu du composant Carousel
   return (
-    <div className="carousel"> {/* Conteneur principal du carousel */}
-      <div className="carousel-inner"> {/* Conteneur des diapositives */}
-        {shouldShowNavigation && ( // Condition pour afficher les boutons de navigation uniquement s'il y a plus d'une image
-          <button className='previous' onClick={prevSlide}> {/* Bouton pour passer à la diapositive précédente */}
-            <FontAwesomeIcon icon={faChevronLeft} /> {/* Icône de flèche gauche */}
-          </button>
-        )}
-        {images.map((image, index) => ( // Boucle sur les images pour les afficher
+    <div className="carousel">
+      <div className="carousel-inner">
+        {/* Bouton pour passer à la diapositive précédente */}
+        <button className='previous' onClick={prevSlide}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        {/* Mapping sur les images pour créer les diapositives */}
+        {images.map((image, index) => (
           <div
             key={index}
-            className={`carousel-item ${index === currentIndex ? 'active' : ''}`} // Ajout de la classe 'active' à l'image actuelle
+            // Ajoute la classe 'active' à la diapositive actuelle
+            className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
           >
-            <img src={image} alt={`Slide ${index + 1}`} /> {/* Image de la diapositive */}
+            {/* Affiche l'image de la diapositive */}
+            <img src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
-        {shouldShowNavigation && ( // Condition pour afficher les boutons de navigation uniquement s'il y a plus d'une image
-          <button className='next' onClick={nextSlide}> {/* Bouton pour passer à la diapositive suivante */}
-            <FontAwesomeIcon icon={faChevronRight} /> {/* Icône de flèche droite */}
-          </button>
-        )}
+        {/* Bouton pour passer à la diapositive suivante */}
+        <button className='next' onClick={nextSlide}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
-      {/* Condition pour afficher la pagination uniquement s'il y a plus d'une image */}
-      {images.length > 1 && (
-        <div className="carousel-pagination">
-          {currentIndex + 1}/{images.length} {/* Affichage du numéro de la diapositive actuelle */}
-        </div>
-      )}
+      {/* Affiche la pagination indiquant le numéro de la diapositive actuelle */}
+      <div className="carousel-pagination">
+        {currentIndex + 1}/{images.length}
+      </div>
     </div>
   );
 };
 
-export default Carousel; // Export du composant Carousel
+// Exporte le composant Carousel pour pouvoir l'utiliser ailleurs dans l'application
+export default Carousel;
