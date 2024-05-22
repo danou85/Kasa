@@ -27,6 +27,7 @@
 
   .collapse .equipement{
     width: 90%;
+    background-color: #F6F6F6F6;
   }
   .collapse-description {
     width: 100%;
@@ -37,6 +38,7 @@
     margin-bottom: 20px;
     margin-right: 20px;
     padding-left: 20px;
+    background-color: #F6F6F6F6;
   }
   /* Ajout de styles pour l'animation du chevron */
   .collapse .chevron-icon {
@@ -49,6 +51,7 @@
   
 .apropos .collapse{
   margin-top: 10px;
+
 }
   
 

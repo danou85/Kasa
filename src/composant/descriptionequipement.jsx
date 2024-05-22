@@ -12,22 +12,13 @@ const DescriptionEquipement = ({ description, equipments }) => {
   const [equipementCollapsed, setEquipementCollapsed] = useState(true);
 
 
-  const toggleDescriptionCollapse = () => { // Fonction pour basculer l'état de la description
-    setDescriptionCollapsed(!descriptionCollapsed);
-  };
-
-  const toggleEquipementCollapse = () => { // Fonction pour basculer l'état des équipements
-    setEquipementCollapsed(!equipementCollapsed);
-  };
-
   return (
     <div className='equipement '>
       {/* Composant Collapse pour la description */}
       <Collapse className='description'
         title="Description" // Titre de la section
         content={description} // Contenu de la section
-        isCollapsed={descriptionCollapsed} // État de la section (collapsed or expanded)
-        toggleCollapse={toggleDescriptionCollapse} // Fonction de bascule pour la section
+
       />
       {/* Composant Collapse pour les équipements */}
       <Collapse
@@ -39,8 +30,6 @@ const DescriptionEquipement = ({ description, equipments }) => {
             ))}
           </ul>
         }
-        isCollapsed={equipementCollapsed} // État de la section (collapsed or expanded)
-        toggleCollapse={toggleEquipementCollapse} // Fonction de bascule pour la section
       />
     </div>
   );

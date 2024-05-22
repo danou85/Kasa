@@ -3,9 +3,13 @@ header {
   justify-content: space-between;
   margin-top: 20px;
 }
+header img{
+  margin-left: 7%;
+}
 
 header nav {
   display: flex;
+  margin-top: 15px;
 }
 
 header nav a {
