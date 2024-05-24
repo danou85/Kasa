@@ -5,13 +5,14 @@
    justify-content: center;
    align-items: center;
    margin-top: 50px;
-    
+  background-color: #eee;
+
   }
   
   .Card {
     position: relative;
-    width: 28%;
-    height: 340px;
+    width: 25%;
+    height: 320px;
     background: linear-gradient(180deg, salmon 0%, red 300%);
     border-radius: 10px;
     text-align: center;
@@ -33,7 +34,7 @@
     align-items: flex-start;
     justify-content:space-between;
     bottom: 0;
-    left: 0;
+    left: 15px;
     right: 0;
     
   }
