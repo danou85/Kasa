@@ -12,6 +12,7 @@
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
+    margin-left: 9%;
     
 }
 .title-loc p {
@@ -22,6 +23,7 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    
 }
 .title-loc ul {
     display: flex;
@@ -44,6 +46,7 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    margin-left: 9%;
 }
 #title-loc-1 {
     margin-right: 5%;
@@ -71,6 +74,8 @@
 .host-info {
     display: flex;
     align-items: center;
+    margin-right: 17%;
+
     
 }
 .host-info p{
@@ -79,6 +84,7 @@
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
+   
 }
 .host-info img{
     border-radius: 70px;
@@ -89,6 +95,7 @@
     align-items: center;
     font-size: 36px; /* Ajustez la taille de police à votre convenance */
     justify-content: flex-end;
+    margin-right: 19%;
 }
 
 .title-info {
@@ -98,6 +105,7 @@
   margin-top: 0;
   color: black;
   margin-left: 5px;
+  margin-left: 9%;
 }
 
 .inactive {
@@ -117,6 +125,7 @@
         margin-left: 5px;
         width: 50px;
         height: 50px;
+        margin-left: 10%;
       }
       .host-info {
         width: 150px;
@@ -131,10 +140,11 @@
       .rating-info {
         display: flex;
         align-items: center;
+        margin-left: 8%;
       }
       
       .rating-info p {
-        font-size: 20px; /* Ajustez la taille de police à votre convenance */
+        font-size: 20px; 
       }
       
     .title-loc {

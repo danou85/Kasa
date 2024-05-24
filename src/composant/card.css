@@ -1,24 +1,26 @@
 
-.Card-content {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   margin-top: 50px;
-  background-color: #eee;
+ .Card-content{
+  background-color: #EEE;
+  width: 88%;
+  justify-content: center;
+  margin-left: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+ }
 
-  }
-  
   .Card {
     position: relative;
-    width: 25%;
-    height: 320px;
+    width: 29%;
+    height: 330px;
     background: linear-gradient(180deg, salmon 0%, red 300%);
     border-radius: 10px;
     text-align: center;
     color: white;
     text-decoration: none;
-    margin: 20px  ;
+    margin: 25px;
+    margin-top: 45px;
+    
   }
   
   .Card img {
@@ -44,11 +46,13 @@
 @media only screen and (max-width: 768px) {
 
   .Card-content {
-   width: 100%;
+   width: 130%;
+ 
    background-color: white;
   }
   .Card{
-    width: 100%;
+    width: 90%;
+
   }
 
 }

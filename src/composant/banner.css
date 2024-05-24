@@ -1,7 +1,7 @@
 /* Votre fichier CSS */
 
 .banner {
-  width: 92%; /* La largeur est maintenant en pourcentage par rapport à une largeur parente de 1440 pixels */
+  width: 86%; /* La largeur est maintenant en pourcentage par rapport à une largeur parente de 1440 pixels */
   max-width: 1240px; /* La largeur maximale est de 1240 pixels */
   height: 223px;
   margin-top: 100px;
@@ -38,6 +38,7 @@
   color: white;
   z-index: 2; /* Assurez-vous que le texte est au-dessus de l'overlay */
   height: 68px;
+  font-weight: 500;
   font-size: 48px;
   position: relative; /* Position relative pour être au-dessus de l'overlay */
 }
@@ -49,10 +50,12 @@
 /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
 @media only screen and (max-width: 768px) {
   .banner {
-    width: 98%;
-    margin-left: 1%;
-    height: 200px;
+    width: 100%;
+    margin-left: 15%;
+    height: 180px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .banner::before {

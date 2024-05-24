@@ -6,8 +6,9 @@
   justify-content: center;
   margin-top: 20px;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   height: 415px;
+  margin-left: 5%;
 }
 
 .carousel-pagination {
@@ -79,7 +80,7 @@
 }
 
 /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .carousel button {
     font-size: 30px;
   }
