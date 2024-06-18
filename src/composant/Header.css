@@ -33,7 +33,8 @@ header nav a:hover {
   }
   header nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-left: 15%;
 
   }
   header nav a {
@@ -43,5 +44,10 @@ header nav a:hover {
   }
   nav{
     align-items: center;
+  }
+
+  .logo{
+    width: 145px;
+    height: 46,88px;
   }
 }

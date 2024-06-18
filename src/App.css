@@ -7,6 +7,8 @@ body {
   /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
   @media only screen and (max-width: 768px) {
      
-  
+  body{
+    margin: 0;
+  }
   }
   
