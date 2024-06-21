@@ -50,8 +50,8 @@
 /* Media query pour les écrans de 768 pixels de largeur ou moins (mode mobile) */
 @media only screen and (max-width: 768px) {
   .banner {
-    width: 335px;
-    margin-left: 15%;
+    width: 90%;
+   
     height: 111px;
     border-radius: 20px;
     display: flex;

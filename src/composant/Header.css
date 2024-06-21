@@ -30,17 +30,20 @@ header nav a:hover {
    
   header {
     margin-top: 20px;
+    justify-content: space-around;
   }
   header nav {
     display: flex;
     justify-content: flex-end;
-    margin-left: 15%;
+    margin-left: 0%;
+    
 
   }
   header nav a {
    margin-left: 10px;
     font-size: 12px;
     text-transform: uppercase;
+    text-wrap: nowrap;
   }
   nav{
     align-items: center;

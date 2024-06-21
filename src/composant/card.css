@@ -46,12 +46,15 @@
 @media only screen and (max-width: 768px) {
 
   .Card-content {
-   width: 130%;
+   width: 100%;
+   margin-left: 0%;
  
    background-color: white;
   }
   .Card{
     width: 90%;
+    margin: 0 0 20px 0;
+  
 
   }
 
