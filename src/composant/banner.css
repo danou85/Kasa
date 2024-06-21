@@ -51,7 +51,7 @@
 @media only screen and (max-width: 768px) {
   .banner {
     width: 90%;
-   
+   margin: 5%;
     height: 111px;
     border-radius: 20px;
     display: flex;
@@ -64,5 +64,7 @@
 
   .banner p {
     font-size: 24px; /* Ajustez la taille du texte pour mobile */
+    font: weight 700px; ;
+    margin: 6%;
   }
 }

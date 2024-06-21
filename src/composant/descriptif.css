@@ -65,4 +65,9 @@
   .collapse-description{
     margin: left 25px; 
   }
+
+  .collapse{
+    margin-top: 4%;
+    height: 35px;
+  }
 }

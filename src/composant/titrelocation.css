@@ -118,11 +118,12 @@
     .host-rating-info {
         display: flex;
         justify-content: space-between;
+       
         flex-direction: row-reverse; /* Inverse le sens de la ligne */
       }
       .host-info img {
         border-radius: 70px;
-        margin-left: 5px;
+        margin-left: 5px !important;
         width: 50px;
         height: 50px;
         margin-left: 10%;
@@ -177,5 +178,16 @@
       }
       .title-info{
         width: 100%;
+      }
+
+      .title-loc h1{
+        font-size: 20px;
+        padding-left: 5%;
+        margin: 0%;
+      }
+      .title-loc p{
+        font-size: 18px;
+        padding-left: 5%;
+        margin: 0%;
       }
     }
