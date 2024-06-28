@@ -130,6 +130,7 @@
       }
       .host-info {
         width: 150px;
+        margin: 5%;
       }
       .host-info p {
         font-family: Montserrat;
