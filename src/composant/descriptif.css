@@ -29,14 +29,11 @@
     width: 90%;
     background-color: #F6F6F6F6;
   }
-  .collapse-description {
-    width: 100%;
+  .collapse-description{
+    width: 94%;
     max-width: 1023px;
     color: #FF6060;
-    padding-left: 50px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
     padding-left: 20px;
     background-color: #F6F6F6F6;
   }
