@@ -15,6 +15,7 @@ const Description = () => {
   // Rendu du composant Forms
   return (
     <div>
+    <div className="descriptif-collapse">
       <Collapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -40,6 +41,7 @@ const Description = () => {
             cela permet à nos équipes de vérifier que les standards sont bien respectés.
             Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
       />
+    </div>
     </div>
   );
 };
